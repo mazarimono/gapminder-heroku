@@ -112,5 +112,5 @@ def update_title(hoverData):
         px.line(country_df, x="year", y="pop", title="{}の人口".format(country_name)),
     )
 
-
-app.run_server(debug=True)
+if __name__ == "__main__":
+    app.run_server(debug=True)
